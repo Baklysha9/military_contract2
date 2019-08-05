@@ -13,48 +13,80 @@
 
 <body>
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4">Pricing</h1>
-        <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap
-            example. It’s built with default Bootstrap components and utilities with little customization.</p>
+        <img src="img/logo.png" alt="logo" class="logo">
+        <p class="lead">МИНИСТЕРСТВО ОБОРОНЫ РОССИЙСКОЙ ФЕДЕРАЦИИ <br>ВОЕННАЯ СЛУЖБА ПО КОНТРАКТУ</p>
     </div>
     <div class="container-iner" style="text-align: center">
-        <div class="row">
-            <div class="col-sm"><button class="btn_menu">Поступление на военную службу по контракту</button><br><button class="btn_menu">Поступление на военную службу по контракту женщинам</button></div>
-            <div class="col-sm"><iframe width=100% height="315" src="https://www.youtube.com/embed/egIj_eSzB8k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="col-sm"><button class="btn_menu">Поступление на военную службу по контракту в замен службы по призыву</button><br><button class="btn_menu">Поступление на военную службу по контракту для иностранных граждан</button></div>
+        <div class="row poloska">
+            <div class="col-sm">
+                <div class="button-item">
+                    <a href="admission.html" class="btn-2">Поступление на военную службу по контракту</a>
+                </div>
+                <br>
+                <div class="button-item">
+                    <a href="woman.html" class="btn-2 woman"><span>Поступление на военную службу по контракту женщинам</span></a>
+                </div>
+                <br>
+                <div class="button-item">
+                        <a href="money.html" class="btn-2 woman"><span>Социальные гарантии, денежное довольствие военнослужащих</span></a>
+                    </div>
+            </div>
+            <div class="col-sm"><iframe width=100% height="315" margin-top="20" src="https://www.youtube.com/embed/egIj_eSzB8k"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="col-sm right_block">
+                <div class="button-item">
+                    <a href="army.html" class="btn-2 danger"><span>Поступление на военную службу по контракту в замен службы по призыву</span></a>
+                </div>
+                <br>
+                <div class="button-item">
+                        <a href="transit.html" class="btn-2">Прохождение военной службы по контракту</a>
+                </div>
+                <br>
+                <div class="button-item">
+                        <a href="foreigner.html" class="btn-2">Поступление на военную службу по контракту иностранцам</a>
+                </div>
+            </div>
         </div>
     </div>
+
 
 
     <div class="col-md-4 offset-md-4 padding">
-    <form action="php/mail.php">
-        <div class="form-group">
-            <label for="exampleInputName1">Ваше имя:</label>
-            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="emailHelp"
-                placeholder="Введите имя">
-        </div>
-        <div class="form-group">
-            <label for="phone">Телефон:</label>
-            <input type="phone" class="form-control" id="phone" placeholder="Введите телефон">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Ваш вопрос:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Введите вопрос"></textarea>
-          </div>
-        <div class="form-check mb-2 mr-sm-2">
-            <input class="form-check-input checkbox" type="checkbox" onclick="check()">
-            <label class="form-check-label" for="inlineFormCheck">
-              Согласен на обработку персональных данных
-            </label>
-        </div>
-        <button type="submit" class="btn btn-primary" id="send" style="display: none;">Отправить</button>
-    </form>
+        <form action="php/mail.php">
+            <div class="form-group">
+                <h4 style="text-align: center; color:white;">РЕШИЛИ ПОСТУПИТЬ НА ВОЕННУЮ СЛУЖБУ ПО КОНТРАКТУ? <BR>ОСТАЛИСЬ
+                    ВОПРОСЫ? <br>ПОЗВОНИТЕ НА ПУНК ОТБОРА<BR><span style="background: white; color:red; text-shadow:none;"><a style="color: red;" href="tel:89069878789">8(863) 23-515-23</a></span><BR>ИЛИ<BR>ЗАПОЛНИТЕ ФОРМУ НИЖЕ</h4>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputName1">Ваше имя:</label>
+                <input type="name" class="form-control" id="exampleInputName1" aria-describedby="emailHelp"
+                    placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="phone" class="form-control" id="phone" placeholder="Введите телефон">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Дополнительно (необязательно):</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Введите вопрос или ваши пожелания для поступления на службу"></textarea>
+            </div>
+            <div class="form-check mb-2 mr-sm-2">
+                <input class="form-check-input checkbox" type="checkbox" onclick="check()">
+                <label class="form-check-label" for="inlineFormCheck">
+                    Согласен на обработку персональных данных
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="send" style="display: none;">Отправить</button>
+        </form>
     </div>
-    <footer class="footer mt-auto py-3">
-        <div class="container">
-          <span class="text-muted">Place sticky footer content here.</span>
-        </div>
-      </footer>
+    <footer class="footer mt-auto py-3" style="background: #0c0c0c94;">
+            <div class="container-inner" style="text-align: center;">
+                <img src="./img/logo.png" alt="" width="50px;">
+                <span class="text-muted" style="margin-left: 20px; color: white !important;">2019 ПУНКТ ОТБОРА НА ВОЕННУЮ СЛУЖБУ ПО КОНТРАКТУ Г. РОСТОВ-НА-ДОНУ </span>
+            </div>
+        </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
